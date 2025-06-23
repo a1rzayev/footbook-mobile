@@ -17,38 +17,39 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title">Welcome to Footbook!</ThemedText>
         <HelloWave />
       </ThemedView>
+      
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
+        <ThemedText type="subtitle">🎉 You're successfully logged in!</ThemedText>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
+          Welcome to your Footbook account. You can now explore stadiums, book fields, and join teams.
         </ThemedText>
       </ThemedView>
+
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+        <ThemedText type="subtitle">What you can do:</ThemedText>
         <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
+          • Browse available stadiums and fields{'\n'}
+          • Book time slots for your games{'\n'}
+          • Join or create teams{'\n'}
+          • Manage your bookings and notifications
         </ThemedText>
       </ThemedView>
+
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">Ready to start?</ThemedText>
         <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+          Use the tabs below to navigate through the app and start exploring!
+        </ThemedText>
+      </ThemedView>
+
+      <ThemedView style={styles.stepContainer}>
+        <ThemedText type="subtitle">Quick Actions:</ThemedText>
+        <ThemedText>
+          • Tap "Explore" to browse stadiums and fields{'\n'}
+          • Tap "Profile" to manage your account and settings
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
